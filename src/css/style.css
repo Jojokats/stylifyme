@@ -4,7 +4,13 @@ body {
   background: #fff; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #2c2c2c; }
+  color: #2c2c2c;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem; }
 
 .navbar {
   border-bottom: #333 1px solid;
@@ -14,7 +20,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #home-section {
   background: url(../img/punkette-sm.jpg) no-repeat center top;
-  background-size: cover;
   background-attachment: fixed;
   min-width: 100%;
   min-height: 800px; }
@@ -26,20 +31,67 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     min-height: 800px; }
   #home-section .home-inner {
-    padding-top: 550px; }
+    padding-top: 500px; }
     #home-section .home-inner h1 {
       color: #fff;
       font-weight: 300;
-      font-size: 3.5rem;
-      text-transform: uppercase; }
+      font-size: 3.5rem; }
 
 #welcome {
   padding: 90px 20px; }
-  #welcome h2 {
-    font-size: 2.5rem; }
   #welcome p {
     margin-top: 30px;
-    font-size: 1.2rem; }
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.8; }
+  #welcome hr {
+    margin-top: 2rem;
+    width: 30%; }
+
+#services h2 {
+  margin-bottom: 8rem; }
+
+#services h3 {
+  margin-top: 4rem;
+  margin-bottom: 40px; }
+
+#services .lime {
+  color: #78BD2E; }
+
+#services .orange {
+  color: #F6A748; }
+
+#services .blue {
+  color: #60BFFF; }
+
+#services img.gr {
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(120, 189, 46, 0.5);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(120, 189, 46, 0.5);
+  box-shadow: 0px 5px 20px 0px rgba(120, 189, 46, 0.5);
+  border-radius: 100%; }
+
+#services img.og {
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(246, 167, 73, 0.5);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(246, 167, 73, 0.5);
+  box-shadow: 0px 5px 20px 0px rgba(246, 167, 73, 0.5);
+  border-radius: 100%; }
+
+#services img.bl {
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(96, 191, 255, 0.5);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(96, 191, 255, 0.5);
+  box-shadow: 0px 5px 20px 0px rgba(96, 191, 255, 0.5);
+  border-radius: 100%; }
+
+#services p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-weight: 300;
+  padding: 0 20px 20px; }
+
+#services hr {
+  margin-top: 2rem;
+  width: 10%; }
 
 html {
   font-size: 14px; }
@@ -49,4 +101,6 @@ html {
     font-size: 1.4rem;
     padding: 20px 150px;
     font-weight: 300;
-    margin-top: 0px; } }
+    margin-top: 0px; }
+  #welcome hr {
+    width: 10%; } }

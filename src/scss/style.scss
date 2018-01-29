@@ -4,6 +4,9 @@ $heading-color: #2c2c2c;
 $bg-color: #333;
 $bg-white: #fff;
 $primary-color: #60BEFF;
+$lime: #78BD2E;
+$orange: #F6A748;
+$blue: #60BFFF;
 
 body {
   font-family: $font-family;
@@ -13,6 +16,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: $heading-color;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
 }
 
 .navbar {
@@ -24,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #home-section {
   background: url(../img/punkette-sm.jpg) no-repeat center top;
-  background-size: cover;
+  // background-size: cover;
   background-attachment: fixed;
   min-width: 100%;
   min-height: 800px;
@@ -39,14 +49,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .home-inner {
-    padding-top: 550px;
+    padding-top: 500px;
 
     h1 {
       color: $bg-white;
       font-weight: 300;
       font-size: 3.5rem;
-      text-transform: uppercase;
-
     }
   }
 } // end #home-section
@@ -54,14 +62,66 @@ h1, h2, h3, h4, h5, h6 {
 #welcome {
   padding: 90px 20px;
 
-
-      h2 {
-        font-size: 2.5rem;
-      }
       p {
         margin-top: 30px;
-        font-size: 1.2rem;
+        margin-bottom: 50px;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.8;
       }
+      hr {
+        margin-top: 2rem;
+        width: 30%;
+      }
+}
+
+#services {
+  h2 {
+    margin-bottom: 8rem;
+  }
+  h3 {
+    margin-top: 4rem;
+    margin-bottom: 40px;
+  }
+  .lime {
+    color: $lime;
+  }
+  .orange {
+    color: $orange;
+  }
+  .blue {
+    color: $blue;
+  }
+  img.gr {
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(120, 189,46,0.5);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(120, 189,46,0.5);
+    box-shadow: 0px 5px 20px 0px rgba(120, 189,46,0.5);
+    border-radius: 100%;
+  }
+  img.og {
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(246, 167, 73,0.5);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(246, 167, 73,0.5);
+    box-shadow: 0px 5px 20px 0px rgba(246, 167, 73,0.5);
+    border-radius: 100%;
+  }
+  img.bl {
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(96, 191, 255,0.5);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(96, 191, 255,0.5);
+    box-shadow: 0px 5px 20px 0px rgba(96, 191, 255,0.5);
+    border-radius: 100%;
+  }
+  p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    font-weight: 300;
+    padding: 0 20px 20px;
+  }
+
+  hr {
+    margin-top: 2rem;
+    width: 10%;
+  }
+
 }
 
 
@@ -77,7 +137,9 @@ html {
       padding: 20px 150px;
       font-weight: 300;
       margin-top: 0px;
-
+    }
+    hr {
+      width: 10%;
     }
   }
 }
